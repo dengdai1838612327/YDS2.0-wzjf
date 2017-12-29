@@ -197,8 +197,21 @@
   font-size: 16px;
 }
 /*违章查询结果*/
+.top-tips{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ffcb99;
+  position: fixed;
+  top: 45px;
+  z-index: 1;
+}
+.search-res{
+  margin-bottom: 45px;
+}
 .search-res ul{
-  margin-top: 10px;
+  margin-top: 40px;
   background-color: #fff;
 }
 .search-res ul li{
@@ -208,11 +221,14 @@
   position: relative;
 }
 .search-res li .choose{
-  float: left;
   width: 15px;
   height: 15px;
   border: 1px solid #ddd;
   border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -7px;
 }
 .search-res li .choose.sprites{
   background-position: 0 -130px;
@@ -220,23 +236,282 @@
 }
 .search-res .search-m{
   float: left;
-  margin-left: 20px;
+  margin-left: 35px;
+  width: 90%;
+}
+.search-m .time{
+  color: #999;
+  overflow: hidden;
+  font-size: 14px;
+}
+.search-m .time span{
+  float: left;
+  line-height: 20px;
+}
+.search-m .time em{
+  float: left;
+  width: 65px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.search-m .time em.blue{
+  background-color: #0166ff;
+}
+.search-m .time em.gray{
+  background-color: #999;
+}
+.search-m .posi{
+  font-size: 18px;
+  line-height: 30px;
+}
+.search-m .desc{
+  font-size: 14px;
+  color: #ffa055;
+  margin-bottom: 5px;
+  width: 100%;
+  overflow: hidden;
+  overflow-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.search-m .detail{
+  overflow: hidden;
+  font-size: 14px;
+}
+.search-m .detail span{
+  float: left;
+  color: #999;
+  line-height: 15px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.search-m .detail i{
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.search-m .detail i.money{
+  background-position: 0 -186px;
+}
+.search-m .detail i.score{
+  background-position: 0 -167px;
 }
 .search-res li .icon-right{
   right: 10px;
   left: auto;
+  top: 50%;
+  margin-top: -17px;
 }
-.top-tips{
+.search-res-btm{
   width: 100%;
-  height: 30px;
-  line-height: 30px;
+  height: 45px;
+  line-height: 45px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+.search-res-btm .sum{
+  float: left;
+  width: 70%;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.search-res-btm .sum span{
+  margin-right: 10px;
+}
+.search-res-btm .sum span em{
+  color: #E60012;
+  font-weight: bold;
+}
+.search-res-btm a{
+  float: right;
+  width: 30%;
   text-align: center;
-  background-color: #ffcb99;
+  color: #fff;
+  background-color: #E60012;
+  font-size: 16px;
 }
 .no-car i.no-record{
   width: 86px;
   height: 82px;
   background-position: right -85px;
+  margin-top: 30px;
+}
+.search-m .time em{
+  float: left;
+  width: 65px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.search-m .time em.blue{
+  background-color: #0166ff;
+}
+.search-m .time em.gray{
+  background-color: #999;
+}
+/*违章详情*/
+.detail-block{
+  background-color: #fff;
+  margin-top: 10px;
+  padding-left: 15px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.detail-block ul li{
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  color: #666;
+  line-height: 20px;
+  padding: 8px 0;
+  position: relative;
+}
+.detail-block ul li:last-child{
+  border-bottom: none;
+}
+.detail-block li.tit .fl{
+  float: left;
+}
+.detail-block li.tit .fr{
+  float: right;
+  margin-right: 10px;
+  color: #999;
+}
+.detail-block li.desc p{
+  color: #999;
+}
+.detail-block li.desc .main{
+  font-size: 18px;
+  line-height: 25px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.detail-block li label{
+  color: #999;
+}
+.detail-block li.tips{
+  color: #999;
+}
+.detail-block .sum{
+  color: #999;
+  float: left;
+  margin: 15px 0;
+}
+.detail-block .sum em{
+  color: #E60012;
+  font-weight: bold;
+}
+.deal-tag{
+  float: right;
+  width: 65px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin: 15px 10px;
+}
+.deal-tag.blue{
+  background-color: #0166ff;
+}
+.deal-tag.gray{
+  background-color: #999;
+}
+/*确认罚单-非现场单*/
+.confirm{
+  margin-bottom: 55px;
+}
+.confirm .detail-block li{
+  color: #999;
+}
+.confirm .detail-block li label{
+  color: #666;
+}
+.confirm .detail-block .sum{
+  margin: 0;
+}
+.next-btn{
+  display: block;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #E60012;
+}
+/*创建订单-非现场单*/
+.creat{
+  margin-bottom: 55px;
+}
+.creat .detail-block ul li{
+  padding: 12px 0;
+}
+.creat .detail-block label{
+  color: #666;
+  float: left;
+  width: 85px;
+  text-align: right;
+  margin-right: 10px;
+}
+.creat ul li input{
+  float: left;
+  width: 68%;
+}
+/*上传证件*/
+.creat.upload .detail-block label{
+  width: 70px;
+}
+.upload .icon-upload{
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  width: 40px;
+  height: 32px;
+  background-position: right -48px;
+}
+.upload .detail-block ul li span{
+  color: #999;
+}
+/*确认订单、确认罚单-现场单*/
+.confirm2 li label{
+  float: left;
+  width: 60px;
+  text-align: right;
+  margin-right: 10px;
+}
+.confirm-btm{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  overflow: hidden;
+}
+.confirm-btm .sum{
+  float: left;
+  width: 50%;
+  font-size: 14px;
+  text-align: center;
+}
+.confirm-btm .sum em{
+  color: #E60012;
+  font-weight: bold;
+}
+.confirm-btm .pay{
+  float: right;
+  width: 50%;
+  background-color: #E60012;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
 }
 /*查询其他区域*/
 .sel-modal.area{
@@ -314,4 +589,132 @@
 }
 .success-btn input.gray {
   background-color: #999;
+}
+/*缴费记录*/
+.record-block{
+  margin-top: 10px;
+  background-color: #fff;
+  padding-left: 15px;
+}
+.record-block .record-con{
+  border-bottom: 1px solid #ddd;
+  padding: 10px 10px 10px 0;
+  overflow: hidden;
+}
+.record-con .fl{
+  float: left;
+  width: 75%;
+}
+.record-con .fl .order-num{
+  font-size: 14px;
+  color: #666;
+  line-height: 25px;
+}
+.record-con .fl .chepai{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.record-con .fl .date{
+  color: #666;
+  font-size: 14px;
+  line-height: 25px;
+}
+.record-con .fr{
+  float: right;
+  width: 25%;
+}
+.status{
+  text-align: right;
+  font-size: 18px;
+  color: #666;
+}
+.status.orange{
+  color: #ff722e;
+}
+.record-con .fr span{
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  margin-top: 28px;
+}
+.record-btn{
+  padding: 10px 0;
+  overflow: hidden;
+}
+.record-btn .fl{
+  float: left;
+  color: #f79c00;
+  font-size: 18px;
+}
+.record-btn .fr{
+  float: right;
+}
+.record-btn .fr a{
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  line-height: 23px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.record-btn .fr a.block{
+  border: 1px solid #666;
+  color: #666
+}
+.record-btn .fr a.fill{
+  border: 1px solid #E60012;
+  background-color: #E60012;
+  color: #fff;
+}
+/*订单详情-非现场单*/
+.confirm.mb0{
+  margin-bottom: 0;
+}
+.confirm .detail-block li span.red{
+  color: #E60012;
+}
+.confirm2 .detail-block .sum{
+  margin: 15px 0;
+}
+.confirm2 .status{
+  float: right;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.confirm2 .detail-block .w-limit{
+  float: left;
+  width: 55%;
+  overflow: hidden;
+  overflow-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.order-detail-btn{
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+.order-detail-btn button{
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 5px;
+  font-size: 14px;
+}
+.order-detail-btn button.gray{
+  background-color: #999;
+}
+.order-detail-btn button.red{
+  background-color: #E60012;
+}
+/*查看证件*/
+.check-img{
+  float: left;
+  margin: -5px 10px -5px 0;
 }
