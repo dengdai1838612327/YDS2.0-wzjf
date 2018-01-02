@@ -480,6 +480,13 @@
 .upload .detail-block ul li span{
   color: #999;
 }
+.upload input[type='file']{
+  opacity: 0;
+  position: absolute;
+  left: 80px;
+  width: 75%;
+  z-index: 10;
+}
 /*确认订单、确认罚单-现场单*/
 .confirm2 li label{
   float: left;
