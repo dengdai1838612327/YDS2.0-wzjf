@@ -525,6 +525,7 @@
   height: 350px;
   background-color: #fff;
   padding: 0;
+  overflow-y: scroll;
 }
 .sel-modal.area .tit{
   font-size: 16px;
@@ -532,6 +533,14 @@
   border-bottom: 1px solid #ddd;
   height: 50px;
   line-height: 50px;
+  position: fixed;
+  bottom: 300px;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
+.sel-modal.area .area-list{
+  margin-top: 50px;
 }
 .area-list dl dt {
   position: relative;
